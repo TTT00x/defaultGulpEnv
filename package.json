@@ -1,0 +1,28 @@
+{
+  "name": "myDevEnv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://TTT00x@github.com/TTT00x/myDevEnv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TTT00x/myDevEnv/issues"
+  },
+  "homepage": "https://github.com/TTT00x/myDevEnv#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "require-dir": "^0.3.2",
+    "uglifyjs-webpack-plugin": "^1.0.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4",
+    "webpack-stream": "^4.0.0"
+  }
+}
