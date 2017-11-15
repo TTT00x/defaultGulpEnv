@@ -3,12 +3,10 @@ const gutil = require('gulp-util');
 const WebpackDevServer = require('webpack-dev-server');
 const webpack = require('webpack');
 const webpackConfig = require('../../webpack.config');
-const paths = require('../paths');
 
 gulp.task('server', () => {
   let myConfig = Object.create(webpackConfig);
   myConfig.devtool = 'eval';
-  // myConfig.debug = true;
 
   new WebpackDevServer(webpack(myConfig), {
     publicPath: `/${myConfig.devServer.contentBase}`,
