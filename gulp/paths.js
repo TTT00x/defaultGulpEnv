@@ -1,6 +1,5 @@
-const paths = {
+module.exports = {
   SRC: './src/',
   DEV: './dev/',
   DIST: './dist/'
 }
-export default paths

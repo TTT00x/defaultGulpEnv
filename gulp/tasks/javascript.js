@@ -1,14 +1,10 @@
-// 必要プラグインの読み込み (var gulp = ~ でも可)
-const gulp = require("gulp");
-const webpackStream = require("webpack-stream");
-const webpack = require("webpack");
+const gulp = require('gulp');
+const webpackStream = require('webpack-stream');
+const webpack = require('webpack');
+const webpackConfig = require('../../webpack.config');
+const paths = require('../paths');
 
-// webpackの設定ファイルの読み込み
-const webpackConfig = require("../../webpack.config");
-
-// タスクの定義。 ()=> の部分はfunction() でも可
-gulp.task("default", () => {
-  // ☆ webpackStreamの第2引数にwebpackを渡す☆
+gulp.task('js', () => {
   return webpackStream(webpackConfig, webpack)
-    .pipe(gulp.dest("dev"));
+    .pipe(gulp.dest(`${paths.DEV}js`));
 });
