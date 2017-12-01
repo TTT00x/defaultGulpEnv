@@ -1,5 +1,5 @@
-import gulp from 'gulp';
-import paths from '../paths';
+const gulp = require('gulp');
+const paths = require('../paths');
 
 gulp.task('watch', () => {
   gulp.watch([paths.SRC + 'pug/**.pug'], ['pug'])
