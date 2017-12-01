@@ -4,7 +4,7 @@ const webpack = require('webpack');
 const webpackConfig = require('../../webpack.config');
 const paths = require('../paths');
 
-gulp.task('js', () => {
+gulp.task('javascript', () => {
   return webpackStream(webpackConfig, webpack)
     .pipe(gulp.dest(`${paths.DEV}js`));
 });

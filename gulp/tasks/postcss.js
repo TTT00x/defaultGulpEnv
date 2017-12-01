@@ -6,7 +6,7 @@ const cssimport = require('postcss-import');
 const simplevars = require('postcss-simple-vars');
 const paths = require('../paths');
 
-gulp.task('css', () => {
+gulp.task('postcss', () => {
   const plugins = [
     cssimport,
     simplevars,
