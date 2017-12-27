@@ -5,7 +5,10 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "start": "npm run gulp",
+    "grepPort": "lsof -i -P | grep 8081",
+    "killPort": "kill -9"
   },
   "repository": {
     "type": "git",
@@ -19,7 +22,7 @@
   },
   "homepage": "https://github.com/TTT00x/myDevEnv#readme",
   "devDependencies": {
-    "autoprefixer": "^7.1.6",
+    "autoprefixer": "^7.2.3",
     "css-mqpacker": "^6.0.1",
     "gulp": "^3.9.1",
     "gulp-imagemin": "^4.0.0",
@@ -28,13 +31,13 @@
     "gulp-pug": "^3.3.0",
     "gulp-util": "^3.0.8",
     "postcss-import": "^11.0.0",
-    "postcss-nested": "^2.1.2",
+    "postcss-nested": "^3.0.0",
     "postcss-simple-vars": "^4.1.0",
     "require-dir": "^0.3.2",
     "run-sequence": "^2.2.0",
-    "uglifyjs-webpack-plugin": "^1.0.1",
-    "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.4",
+    "uglifyjs-webpack-plugin": "^1.1.4",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7",
     "webpack-stream": "^4.0.0"
   },
   "dependencies": {}

@@ -1,10 +1,12 @@
 # myDevEnv
-## Usage
+## Versions
+- node v8.9.3
+- npm 5.5.1
 ### Install
-```ß
+```
 $ npm i
 ```
 ### run
 ```
-$ npm run gulp
+$ npm run start
 ```
