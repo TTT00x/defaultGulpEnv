@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const runSequence = require('run-sequence');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const nested = require('postcss-nested');
@@ -16,4 +17,12 @@ gulp.task('postcss', () => {
   return gulp.src(`${paths.SRC}postcss/style.css`)
     .pipe(postcss(plugins))
     .pipe(gulp.dest(`${paths.DEV}css`))
+});
+
+gulp.task('pugReload', (callback) => {
+  runSequence(
+    'postcss',
+    'bsReload',
+    callback
+  );
 });
