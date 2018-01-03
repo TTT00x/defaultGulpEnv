@@ -4,7 +4,7 @@ const runSequence = require('run-sequence');
 gulp.task('default', (callback) => {
   runSequence(
     'pug',
-    'postcss',
+    'sass',
     'javascript',
     'image',
     'watch',
