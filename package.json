@@ -7,8 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp",
     "start": "npm run gulp",
-    "grepPort": "lsof -i -P | grep 8081",
-    "killPort": "kill -9"
   },
   "repository": {
     "type": "git",
