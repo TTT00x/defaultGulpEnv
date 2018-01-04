@@ -7,7 +7,7 @@ const csscomb = require('gulp-csscomb');
 const paths = require('../paths');
 
 gulp.task('sass', () => {
-  gulp.src(paths.SRC + '/sass/style.scss')
+  gulp.src(paths.SRC + '/scss/style.scss')
     .pipe(plumber())
     .pipe(sass()).on('error', console.error.bind(console))
     .pipe(pleeease({
