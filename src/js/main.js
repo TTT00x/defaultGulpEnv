@@ -142,5 +142,4 @@ window.onload = () => {
   // addEventAddItem()
   //
   toggleMenu()
-
 }
