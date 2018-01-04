@@ -6,16 +6,23 @@ module.exports = {
     publicPath: 'dev',
     filename: 'bundle.js'
   },
-  devtool: 'source-map',
+  module: {
+    rules: [{
+      test: /\.js$/,
+      use: [{
+        loader: 'babel-loader',
+        options: {
+          presets: [
+            ['env', {'modules': false}]
+          ]
+        }
+      }]
+    }]
+  },
   plugins: [
     new UglifyJSPlugin({
       sourceMap: true
     })
   ],
-  devServer: {
-    contentBase: 'dev',
-    port: 8081,
-    inline: true,
-    hot: true,
-  },
+  devtool: 'source-map',
 }

@@ -141,5 +141,6 @@ window.onload = () => {
   // createList()
   // addEventAddItem()
   //
-  // toggleMenu()
+  toggleMenu()
+
 }

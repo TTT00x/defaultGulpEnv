@@ -3,7 +3,7 @@ const browserSync = require('browser-sync');
 const paths = require('../paths');
 
 gulp.task('server', () => {
-  browserSync({
+  return browserSync({
     notify: false,
     port: 3000,
     server: {
@@ -13,5 +13,5 @@ gulp.task('server', () => {
 });
 
 gulp.task('bsReload', () => {
-  browserSync.reload();
+  return browserSync.reload();
 });

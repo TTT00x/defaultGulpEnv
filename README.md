@@ -1,12 +1,18 @@
 # myDevEnv
 ## Versions
-- node v8.9.3
-- npm 5.5.1
+- node v8.9.4
+- npm 5.6.0
 ### Install
 ```
 $ npm i
 ```
 ### run
 ```
-$ npm run start
+$ npm start
+```
+
+### build
+
+```
+$ npm run build
 ```

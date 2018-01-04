@@ -12,7 +12,7 @@ gulp.task('pug', () => {
 });
 
 gulp.task('pugReload', (callback) => {
-  runSequence(
+  return runSequence(
     'pug',
     'bsReload',
     callback

@@ -7,7 +7,7 @@ const csscomb = require('gulp-csscomb');
 const paths = require('../paths');
 
 gulp.task('sass', () => {
-  gulp.src(paths.SRC + '/scss/style.scss')
+  return gulp.src(paths.SRC + '/scss/style.scss')
     .pipe(plumber())
     .pipe(sass()).on('error', console.error.bind(console))
     .pipe(pleeease({
@@ -21,7 +21,7 @@ gulp.task('sass', () => {
 });
 
 gulp.task('sassReload', (callback) => {
-  runSequence(
+  return runSequence(
     'sass',
     'bsReload',
     callback
