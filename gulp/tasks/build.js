@@ -5,6 +5,11 @@ const concat = require('gulp-concat');
 const del = require('del');
 const paths = require('../paths');
 
+gulp.task('copyHtml', () => {
+  gulp.src([`${paths.DEV}*.html`, `${paths.DEV}**/*.html`])
+    .pipe(gulp.dest(paths.DIST))
+})
+
 gulp.task('minCss', () => {
   return gulp.src(`${paths.DEV}css/style.css`)
     .pipe(concat('style.css'))
@@ -30,6 +35,7 @@ gulp.task('copyDevImage', ['delDistImage'], () => {
 
 gulp.task('build', (callback) => {
   return runSequence(
+    'copyHtml',
     'minCss',
     'copyJs',
     'copyDevImage',
