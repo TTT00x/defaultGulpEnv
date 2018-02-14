@@ -1,19 +1,30 @@
-- var dir = ''
-- var title = ''
-- var description = ''
-- var keywords = ''
+include ./_util/_svg-use
+
+-
+  var meta = {
+    dir: '',
+    title: '',
+    description: '',
+    keywords: ''
+  };
 
 doctype html
 html(lang="ja")
   head
-    title #{title}
-    meta(content=`${description}`, name='description')
-    meta(content=`${keywords}`, name='keywords')
+    title=meta.title
+    meta(content=meta.description, name='description')
+    meta(content=meta.keywords, name='keywords')
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width')
     meta(name="format-detection", content="telephone=no")
-    link(rel='stylesheet', href=`${dir}css/style.css`)
+    link(rel='stylesheet', href=`${meta.dir}css/style.css`)
   body
     h1 hello
     h2 world
+    .checkbox-Wrapper
+      input.checkbox(type='checkbox', id='checkbox')
+      label.checkbox-Label(for='checkbox')
+        .checkbox-Symbol
+          +svg-use('check', '')(width='12', height='9', viewBox='0 0 12 9')
+        span チェックボックス

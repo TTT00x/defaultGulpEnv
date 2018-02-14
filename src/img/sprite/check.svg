@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="lv1/form/checkbox-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-6.000000, -7.000000)">
+        <g id="Group" transform="translate(4.000000, 4.000000)" fill="#FFFFFF">
+            <path d="M2.26399556,6.88689794 L2.26399556,6.88689794 C2.61613333,6.53476016 3.18693858,6.53436211 3.53956714,6.88600842 L6.14680746,9.48598623 L12.3687948,3.26399886 C12.7207933,2.91200038 13.2914956,2.91200038 13.6434941,3.26399886 C13.6442448,3.26474956 13.6449942,3.26550159 13.6457422,3.26625494 L13.6457422,3.26625494 C13.9981,3.62111172 13.9970876,4.19411298 13.6434781,4.54772247 L6.85391424,11.3372864 C6.46338995,11.7278106 5.83022497,11.7278106 5.43970067,11.3372864 L2.26399556,8.16158124 C1.91200148,7.80958716 1.91200148,7.23889201 2.26399556,6.88689794 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

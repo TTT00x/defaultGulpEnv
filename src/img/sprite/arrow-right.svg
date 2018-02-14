@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.29289322,7.70710678 C8.90236893,7.31658249 8.90236893,6.68341751 9.29289322,6.29289322 C9.68341751,5.90236893 10.3165825,5.90236893 10.7071068,6.29289322 L16.125054,11.7108405 C16.5114755,12.0972619 16.5161262,12.7223253 16.1354976,13.1144539 L11.07562,18.327206 C10.69095,18.7234981 10.0578551,18.7329197 9.66156301,18.3482496 C9.26527092,17.9635796 9.25584937,17.3304847 9.64051939,16.9341927 L14.0141784,12.4283919 L9.29289322,7.70710678 Z" id="path-1"></path>
+    </defs>
+    <g id="lv1/Icons24/more_link" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Path-11" fill="#979797" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>

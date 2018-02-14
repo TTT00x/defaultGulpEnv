@@ -1,0 +1,14 @@
+{
+  "dest": "dev/img",
+  "mode": {
+    "symbol": {
+      "dest" : ".",
+      "sprite": "symbol.svg"
+    }
+  },
+  "shape": {
+    "id": {
+      "separator": "-"
+    }
+  }
+}
