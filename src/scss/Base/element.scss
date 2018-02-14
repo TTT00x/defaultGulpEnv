@@ -3,45 +3,14 @@
   backface-visibility: hidden;
 }
 
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-address,
-img,
-q,
-sub,
-sup,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-form,
-label,
-button,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a,
+address, img, q, sub, sup, i,
+dl, dt, dd, ol, ul, li,
+form, label, button,
+table, caption, tbody, tfoot,
+tr, th, td {
   margin: 0;
   padding: 0;
   border: 0;
@@ -55,7 +24,6 @@ html {
 }
 
 body {
-  margin: 0;
   width: 100%;
 }
 
@@ -65,7 +33,8 @@ li {
 }
 
 table {
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
 }
 
 img {
@@ -74,21 +43,30 @@ img {
   background: transparent;
 }
 
+a {
+
+  &:focus,
+  &:active {
+    outline: 1px dotted;
+  }
+}
+
 input,
 select,
 option,
-textarea {
+textarea,
+button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 
   &:focus,
   &:active {
-    box-shadow: none;
-    outline: 0;
+    outline: 1px dotted;
   }
 }
 
 button {
   background-color: transparent;
+  font: inherit;
 }
