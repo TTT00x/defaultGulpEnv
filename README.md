@@ -7,7 +7,7 @@
 $ npm i
 ```
 
-### if you are going to postcss
+### if you are going to use postcss
 ```
 $ npm i
 $ npm uninstall gulp-sass gulp-pleeease gulp-csscomb -D
