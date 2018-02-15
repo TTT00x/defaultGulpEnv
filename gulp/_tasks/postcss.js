@@ -3,14 +3,14 @@ const runSequence = require('run-sequence');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const nested = require('postcss-nested');
-const cssimport = require('postcss-import');
-const simplevars = require('postcss-simple-vars');
+const cssImport = require('postcss-import');
+const customProperties = require('postcss-custom-properties');
 const paths = require('../paths');
 
 gulp.task('postcss', () => {
   const plugins = [
-    cssimport,
-    simplevars,
+    cssImport,
+    customProperties,
     nested,
     autoprefixer,
   ];
