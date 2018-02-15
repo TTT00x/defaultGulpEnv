@@ -5,40 +5,24 @@ const concat = require('gulp-concat');
 const del = require('del');
 const paths = require('../paths');
 
-gulp.task('copyHtml', () => {
+gulp.task('copyHtml', () =>
   gulp.src([`${paths.DEV}*.html`, `${paths.DEV}**/*.html`])
-    .pipe(gulp.dest(paths.DIST))
-})
+    .pipe(gulp.dest(paths.DIST)));
 
-gulp.task('minCss', () => {
-  return gulp.src(`${paths.DEV}css/style.css`)
+gulp.task('minCss', () =>
+  gulp.src(`${paths.DEV}css/style.css`)
     .pipe(concat('style.css'))
     .pipe(cssmin())
-    .pipe(gulp.dest(`${paths.DIST}css`))
-});
+    .pipe(gulp.dest(`${paths.DIST}css`)));
 
-gulp.task('copyJs', () => {
-  return gulp.src(`${paths.DEV}js/**`)
-    .pipe(gulp.dest(`${paths.DIST}js`))
-});
+gulp.task('copyJs', () =>
+  gulp.src(`${paths.DEV}js/**`)
+    .pipe(gulp.dest(`${paths.DIST}js`)));
 
-gulp.task('delDistImage', () => {
-  return del([
-    `${paths.DIST}img/**`
-  ])
-});
+gulp.task('delDistImage', () => del([`${paths.DIST}img/**`]));
 
-gulp.task('copyDevImage', ['delDistImage'], () => {
-  return gulp.src(`${paths.DEV}img/**`)
-    .pipe(gulp.dest(`${paths.DIST}img`));
-});
+gulp.task('copyDevImage', ['delDistImage'], () =>
+  gulp.src(`${paths.DEV}img/**`)
+    .pipe(gulp.dest(`${paths.DIST}img`)));
 
-gulp.task('build', (callback) => {
-  return runSequence(
-    'copyHtml',
-    'minCss',
-    'copyJs',
-    'copyDevImage',
-    callback
-  );
-});
+gulp.task('build', callback => runSequence('copyHtml', 'minCss', 'copyJs', 'copyDevImage', callback));

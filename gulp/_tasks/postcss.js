@@ -16,13 +16,7 @@ gulp.task('postcss', () => {
   ];
   return gulp.src(`${paths.SRC}postcss/style.css`)
     .pipe(postcss(plugins))
-    .pipe(gulp.dest(`${paths.DEV}css`))
+    .pipe(gulp.dest(`${paths.DEV}css`));
 });
 
-gulp.task('pugReload', (callback) => {
-  runSequence(
-    'postcss',
-    'bsReload',
-    callback
-  );
-});
+gulp.task('postcssReload', callback => runSequence('postcss', 'bsReload', callback));

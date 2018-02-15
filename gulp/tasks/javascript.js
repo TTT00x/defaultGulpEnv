@@ -5,15 +5,6 @@ const webpack = require('webpack');
 const webpackConfig = require('../../webpack.config');
 const paths = require('../paths');
 
-gulp.task('javascript', () => {
-  return webpackStream(webpackConfig, webpack)
-    .pipe(gulp.dest(`${paths.DEV}js`));
-});
+gulp.task('javascript', () => webpackStream(webpackConfig, webpack).pipe(gulp.dest(`${paths.DEV}js`)));
 
-gulp.task('jsReload', (callback) => {
-  return runSequence(
-    'javascript',
-    'bsReload',
-    callback
-  );
-});
+gulp.task('jsReload', callback => runSequence('javascript', 'bsReload', callback));
