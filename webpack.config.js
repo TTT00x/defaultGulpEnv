@@ -1,10 +1,10 @@
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: './src/js/main.js',
   output: {
     publicPath: 'dev',
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   module: {
     rules: [{
@@ -13,16 +13,16 @@ module.exports = {
         loader: 'babel-loader',
         options: {
           presets: [
-            ['env', {'modules': false}]
-          ]
-        }
-      }]
-    }]
+            ['env', { modules: false }],
+          ],
+        },
+      }],
+    }],
   },
   plugins: [
     new UglifyJSPlugin({
-      sourceMap: true
-    })
+      sourceMap: true,
+    }),
   ],
   devtool: 'source-map',
-}
+};

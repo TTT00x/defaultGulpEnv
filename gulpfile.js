@@ -1,2 +1,3 @@
-const requireDir = require('require-dir')
-requireDir('./gulp/tasks', {recurse: true});
+const requireDir = require('require-dir');
+
+requireDir('./gulp/tasks', { recurse: true });
