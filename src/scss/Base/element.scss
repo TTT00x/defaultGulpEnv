@@ -43,14 +43,6 @@ img {
   background: transparent;
 }
 
-a {
-
-  &:focus,
-  &:active {
-    outline: 1px dotted;
-  }
-}
-
 input,
 select,
 option,
@@ -59,14 +51,46 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-
-  &:focus,
-  &:active {
-    outline: 1px dotted;
-  }
 }
 
 button {
   background-color: transparent;
   font: inherit;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  outline: none;
+}
+
+[data-whatintent="keyboard"] {
+
+  a,
+  input,
+  select,
+  option,
+  textarea,
+  button {
+
+    &:focus,
+    &:active {
+      outline: 1px dotted;
+    }
+  }
+}
+
+[data-whatintent="mouse"] {
+
+  a,
+  input,
+  select,
+  option,
+  textarea,
+  button {
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
 }
