@@ -50,5 +50,8 @@
     "webpack": "^3.10.0",
     "webpack-stream": "^4.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "svg4everybody": "^2.1.9",
+    "what-input": "^5.0.5"
+  }
 }
