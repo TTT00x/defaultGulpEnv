@@ -9,7 +9,6 @@ gulp.task('image', ['delImage'], () => {
   const options = { optimizationLevel: 7 };
 
   return gulp.src([
-    `${paths.SRC}img/*.+(jpg|jpeg|png|gif|svg)`,
     `${paths.SRC}img/**/*.+(jpg|jpeg|png|gif|svg)`,
     `!${paths.SRC}img/sprite/**`,
   ])
