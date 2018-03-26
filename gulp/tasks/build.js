@@ -25,4 +25,4 @@ gulp.task('copyDevImage', ['delDistImage'], () =>
   gulp.src(`${paths.DEV}img/**`)
     .pipe(gulp.dest(`${paths.DIST}img`)));
 
-gulp.task('build', callback => runSequence('copyHtml', 'minCss', 'copyJs', 'copyDevImage', callback));
+gulp.task('build', callback => runSequence('pug', 'sass', 'javascript', 'copyHtml', 'minCss', 'copyJs', 'copyDevImage', callback));

@@ -8,7 +8,7 @@
     "gulp": "gulp",
     "image": "npm run gulp image && svg-sprite -C sprite.config.json --shape-transform-svgo svgo.json src/img/sprite/*.svg",
     "start": "npm run gulp",
-    "build": "npm run gulp build"
+    "build": "npm run image && npm run gulp build"
   },
   "repository": {
     "type": "git",
