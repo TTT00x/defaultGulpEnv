@@ -3,7 +3,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 module.exports = {
   entry: './src/js/main.js',
   output: {
-    publicPath: 'dev',
+    publicPath: 'dist',
     filename: 'bundle.js',
   },
   module: {

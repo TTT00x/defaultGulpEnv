@@ -8,7 +8,7 @@ gulp.task('server', () =>
     port: 3000,
     open: 'external',
     server: {
-      baseDir: [paths.DEV],
+      baseDir: [paths.DIST],
     },
   }));
 

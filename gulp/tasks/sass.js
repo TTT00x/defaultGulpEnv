@@ -3,7 +3,7 @@ const sass = require('gulp-sass');
 const runSequence = require('run-sequence');
 const plumber = require('gulp-plumber');
 const pleeease = require('gulp-pleeease');
-const csscomb = require('gulp-csscomb');
+const cssmin = require('gulp-cssmin');
 const paths = require('../paths');
 
 gulp.task('sass', () =>
@@ -16,7 +16,7 @@ gulp.task('sass', () =>
         browsers: ['last 4 versions'],
       },
     }))
-    .pipe(csscomb())
-    .pipe(gulp.dest(`${paths.DEV}/css`)));
+    .pipe(cssmin())
+    .pipe(gulp.dest(`${paths.DIST}/css`)));
 
 gulp.task('sassReload', callback => runSequence('sass', 'bsReload', callback));

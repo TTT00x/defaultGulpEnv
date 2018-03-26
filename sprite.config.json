@@ -1,5 +1,5 @@
 {
-  "dest": "dev/img",
+  "dest": "dist/img",
   "mode": {
     "symbol": {
       "dest" : ".",

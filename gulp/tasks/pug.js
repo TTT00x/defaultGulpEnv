@@ -12,6 +12,6 @@ gulp.task('pug', () =>
   ])
     .pipe(plumber())
     .pipe(pug())
-    .pipe(gulp.dest(paths.DEV)));
+    .pipe(gulp.dest(paths.DIST)));
 
 gulp.task('pugReload', callback => runSequence('pug', 'bsReload', callback));
