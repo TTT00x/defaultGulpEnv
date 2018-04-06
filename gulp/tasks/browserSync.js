@@ -4,12 +4,13 @@ const paths = require('../paths');
 
 gulp.task('server', () =>
   browserSync({
-    notify: false,
     port: 3000,
     open: 'external',
     server: {
       baseDir: [paths.DIST],
     },
+    notify: false,
+    ghostMode: false,
   }));
 
 gulp.task('bsReload', () => browserSync.reload());

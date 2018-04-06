@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp",
     "image": "npm run gulp image && svg-sprite -C sprite.config.json --shape-transform-svgo svgo.json src/img/sprite/*.svg",
-    "start": "npm run gulp",
+    "start": "npm run image && npm run gulp",
     "build": "npm run image && npm run gulp build"
   },
   "repository": {
@@ -15,7 +15,7 @@
     "url": "git+https://TTT00x@github.com/TTT00x/myDevEnv.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "TTT00x",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TTT00x/myDevEnv/issues"
@@ -40,7 +40,6 @@
     "gulp-plumber": "^1.1.0",
     "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.1.0",
-    "gulp-svg-sprite": "^1.3.7",
     "require-dir": "^0.3.2",
     "run-sequence": "^2.2.0",
     "svg-sprite": "^1.3.7",
