@@ -7,12 +7,6 @@
 $ npm i
 ```
 
-### if you are going to use postcss
-```
-$ npm i
-$ npm uninstall gulp-sass gulp-pleeease gulp-csscomb -D
-$ npm i gulp-postcss autoprefixer postcss-nested postcss-import postcss-simple-vars -D
-```
 ## run
 ```
 $ npm start
