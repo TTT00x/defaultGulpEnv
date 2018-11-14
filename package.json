@@ -1,5 +1,5 @@
 {
-  "name": "my-dev-env",
+  "name": "default-gulp-env",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://TTT00x@github.com/TTT00x/myDevEnv.git"
+    "url": "git+https://TTT00x@github.com/TTT00x/defaultGulpEnv.git"
   },
   "keywords": [],
   "author": "TTT00x",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TTT00x/myDevEnv/issues"
+    "url": "https://github.com/TTT00x/defaultGulpEnv/issues"
   },
-  "homepage": "https://github.com/TTT00x/myDevEnv#readme",
+  "homepage": "https://github.com/TTT00x/defaultGulpEnv#readme",
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "babel-loader": "^8.0.4",
