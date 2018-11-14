@@ -1,6 +1,5 @@
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-
 module.exports = {
+  mode: 'development',
   entry: './src/js/main.js',
   output: {
     publicPath: 'dist',
@@ -19,10 +18,5 @@ module.exports = {
       }],
     }],
   },
-  plugins: [
-    new UglifyJSPlugin({
-      sourceMap: true,
-    }),
-  ],
   devtool: 'source-map',
 };

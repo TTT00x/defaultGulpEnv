@@ -1,6 +1,6 @@
 # myDevEnv
 ## Versions
-- node v8.11.3
+- node v10.13.0
 - npm 5.6.0
 ## Install
 ```
